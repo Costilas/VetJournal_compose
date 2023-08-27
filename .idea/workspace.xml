@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fcb2e667-ed44-4038-b937-1f455a419f89" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/app/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/.styleci.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Actions/Auth/LoginAction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Actions/Auth/LogoutAction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Actions/Card/CreateCardAction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Actions/Card/SearchCardAction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Actions/Common/DescribeFilterAction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Actions/Control/GetMissedPetsAction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Actions/Note/CreateNoteAction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Actions/Note/DeleteNoteAction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Actions/Note/GetNoteListAction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Actions/Owner/ShowOwnerAction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Actions/Owner/UpdateOwnerAction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Actions/Pet/AddPetToOwnerAction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Actions/Pet/SearchPetVisitsAction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Actions/Pet/ShowPetAction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Actions/Pet/UpdatePetAction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Actions/User/Activation/ActivateUserAction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Actions/User/Activation/DeactivateUserAction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Actions/User/Creation/CreateUserAction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Actions/User/Edition/ChangeUserLoginAction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Actions/User/Edition/ChangeUserPasswordAction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Actions/User/Edition/GetEditableUserAction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Actions/User/Edition/UpdateUserAction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Actions/User/Filtering/GetFilteredUserListAction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Actions/User/Filtering/GetUnfilteredUserListAction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Actions/User/Promotion/DemoteUserAction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Actions/User/Promotion/PromoteUserAction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Actions/Visit/CreateVisitAction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Actions/Visit/SearchVisitsAction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Actions/Visit/UpdateVisitAction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Console/Commands/DatabaseBackUp.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Console/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Exceptions/Handler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Facades/VisitServiceFacade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Helpers/FilterConditionDescriber.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Helpers/LoginAccess.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Helpers/ValidatedArrayTypeChecker.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Http/Controllers/CardController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Http/Controllers/ControlController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Http/Controllers/Controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Http/Controllers/LoginController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Http/Controllers/NoteController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Http/Controllers/OwnerController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Http/Controllers/PetController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Http/Controllers/UserController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Http/Controllers/VisitController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Http/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Http/Middleware/AdminMiddleware.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Http/Middleware/Authenticate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Http/Middleware/EncryptCookies.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Http/Middleware/PreventRequestsDuringMaintenance.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Http/Middleware/TrimStrings.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Http/Middleware/TrustHosts.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Http/Middleware/TrustProxies.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Http/Requests/Card/CreateRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Http/Requests/Card/SearchRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Http/Requests/Login/LoginRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Http/Requests/Note/CreateRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Http/Requests/Owner/EditRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Http/Requests/Pet/AddRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Http/Requests/Pet/EditRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Http/Requests/Pet/SearchRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Http/Requests/User/AddRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Http/Requests/User/ChangeLoginRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Http/Requests/User/ChangePasswordRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Http/Requests/User/SearchRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Http/Requests/User/UpdateRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Http/Requests/Visit/CreateRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Http/Requests/Visit/EditRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Http/Requests/Visit/SearchRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/ModelFilters/OwnerFilter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/ModelFilters/UserFilter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/ModelFilters/VisitFilter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Models/CastrationCondition.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Models/Gender.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Models/Kind.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Models/Note.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Models/Owner.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Models/Pet.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Models/Status.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Models/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Models/Visit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Providers/AppServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Providers/AuthServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Providers/BroadcastServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Providers/EventServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Providers/FacadeServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Providers/RouteServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/app/Services/VisitService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/artisan" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/bootstrap/app.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/bootstrap/cache/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/config/app.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/config/auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/config/broadcasting.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/config/cache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/config/cors.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/config/database.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/config/filesystems.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/config/hashing.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/config/logging.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/config/mail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/config/permission.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/config/queue.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/config/sanctum.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/config/services.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/config/session.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/config/view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/database/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/database/migrations/2022_03_17_105807_create_visits_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/database/migrations/2022_03_21_081832_create_owners_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/database/migrations/2022_03_21_081910_create_pets_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/database/migrations/2022_03_21_082051_create_genders_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/database/migrations/2022_03_23_101706_create_kinds_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/database/migrations/2022_03_28_111751_create_notes_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/database/migrations/2022_03_28_111803_create_statuses_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/database/migrations/2022_05_04_114234_create_castration_conditions_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/database/migrations/2022_05_05_152615_add_treatment_to_visits_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/database/migrations/2022_05_09_213604_alter_visit_date_column_default.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/database/migrations/2022_06_07_184535_create_permission_tables.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/database/migrations/2022_08_09_182751_add_additional_phone_and_email_columns_to_owners_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/database/seeders/CastrationConditionSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/database/seeders/CreateProjectRoles.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/database/seeders/DatabaseSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/database/seeders/GenderSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/database/seeders/KindSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/database/seeders/StatusSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/database/seeders/UserSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/lang/en.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/lang/en/auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/lang/en/pagination.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/lang/en/passwords.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/lang/en/validation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/phpunit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/public/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/public/config/access.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/public/config/filter.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/public/css/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/public/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/public/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/public/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/public/js/custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/public/js/jquery-3.6.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/public/mix-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/css/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/css/general/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/css/header/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/css/login/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/css/notes/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/sass/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/sass/app.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/admin/users/add.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/admin/users/edit.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/admin/users/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/admin/users/list.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/admin/users/row.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/card/forms/create.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/card/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/card/list.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/card/row.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/control/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/control/list.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/control/row.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/layouts/body/app/layout.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/layouts/body/login/layout.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/layouts/components/whatsAppShareButton.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/layouts/filter/filterCondition.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/layouts/filter/pet.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/layouts/header.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/layouts/html.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/layouts/notify.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/login/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/notes/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/owner/forms/edit.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/owner/pet/forms/add.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/owner/pet/list.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/owner/pet/row.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/owner/show.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/pet/edit.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/pet/show.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/pet/visit/forms/add.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/pet/visit/forms/search.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/pet/visit/list.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/pet/visit/row.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/visit/edit.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/visit/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/visit/list.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/resources/views/visit/row.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/routes/api.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/routes/channels.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/routes/console.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/routes/web.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/storage/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/storage/app/public/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/storage/debugbar/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/storage/framework/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/storage/framework/cache/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/storage/framework/cache/data/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/storage/framework/sessions/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/storage/framework/testing/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/storage/framework/views/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/storage/logs/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/tests/CreatesApplication.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/tests/Feature/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/tests/TestCase.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/tests/Unit/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/webpack.mix.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/docker/nginx/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/docker/nginx/conf.d/default.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/docker/php-fpm/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/docker/php-fpm/conf.d/php.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/docker/php-fpm/entrypoint.sh" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true">
+    <pharConfigPath>$PROJECT_DIR$/app/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="http://localhost" id="1ef8f294-c2ba-48dc-8b61-69729eac6d27" name="debug" port="8080" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$/app" remote-root="/var/www/html/app" />
+        </path_mappings>
+      </server>
+    </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="php-fpm">
+    <include_path>
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/app/vendor/dflydev/dot-access-data" />
+      <path value="$PROJECT_DIR$/app/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/app/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/app/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/app/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/app/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/app/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/app/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/app/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/app/vendor/barryvdh/laravel-debugbar" />
+      <path value="$PROJECT_DIR$/app/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/app/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/app/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/app/vendor/composer" />
+      <path value="$PROJECT_DIR$/app/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/app/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-php81" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/app/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/app/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/app/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/app/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/app/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/app/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/app/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/app/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/app/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/app/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/app/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/app/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/app/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/app/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/app/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/app/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/app/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/app/vendor/maximebf/debugbar" />
+      <path value="$PROJECT_DIR$/app/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/app/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/app/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/app/vendor/laravel/sail" />
+      <path value="$PROJECT_DIR$/app/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/app/vendor/laravel/serializable-closure" />
+      <path value="$PROJECT_DIR$/app/vendor/laravel/sanctum" />
+      <path value="$PROJECT_DIR$/app/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/app/vendor/twbs/bootstrap" />
+      <path value="$PROJECT_DIR$/app/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/app/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/app/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/app/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/app/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/app/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/app/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/app/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/app/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/app/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/app/vendor/facade/ignition-contracts" />
+      <path value="$PROJECT_DIR$/app/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/app/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/app/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/app/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/app/vendor/league/config" />
+      <path value="$PROJECT_DIR$/app/vendor/spatie/backtrace" />
+      <path value="$PROJECT_DIR$/app/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/app/vendor/spatie/flare-client-php" />
+      <path value="$PROJECT_DIR$/app/vendor/spatie/laravel-ignition" />
+      <path value="$PROJECT_DIR$/app/vendor/spatie/ignition" />
+      <path value="$PROJECT_DIR$/app/vendor/spatie/laravel-permission" />
+      <path value="$PROJECT_DIR$/app/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/app/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/app/vendor/fruitcake/php-cors" />
+      <path value="$PROJECT_DIR$/app/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/app/vendor/wapmorgan/morphos" />
+      <path value="$PROJECT_DIR$/app/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/app/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/app/vendor/wapmorgan/morphos-blade" />
+      <path value="$PROJECT_DIR$/app/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/app/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/app/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/app/vendor/tucker-eric/eloquentfilter" />
+      <path value="$PROJECT_DIR$/app/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/app/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/app/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/app/vendor/marktopper/doctrine-dbal-timestamp-type" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="2QLF22JIjKbsvleFXvD2nMnU4bF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Constants" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary" value="PHPUnit" />
+    <property name="credentialsType com.jetbrains.php.remote.interpreter.ui.PhpCreateRemoteSdkForm" value="Docker Compose" />
+    <property name="credentialsType com.jetbrains.php.remote.interpreter.ui.PhpInplaceEditRemoteSdkForm" value="Docker Compose" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="PHPUnit.OwnerTest">
+    <configuration name="KindTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Kind\KindTest" file="$PROJECT_DIR$/app/tests/Feature/Kind/KindTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="OwnerTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Owner\OwnerTest" file="$PROJECT_DIR$/app/tests/Feature/Owner/OwnerTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="StatusTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Status\StatusTest" file="$PROJECT_DIR$/app/tests/Feature/Status/StatusTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="StatusTest.testUserWithoutPermissionCantGetStatusesData" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Status\StatusTest" file="$PROJECT_DIR$/app/tests/Feature/Status/StatusTest.php" method="testUserWithoutPermissionCantGetStatusesData" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="StatusTest.test_example" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Status\StatusTest" file="$PROJECT_DIR$/app/tests/Feature/Status/StatusTest.php" method="test_example" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="UnitTests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="php-fpm" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner configuration_file="$PROJECT_DIR$/app/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Debugger" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" filter_connections="FILTER" server_name="debug" session_id="PHPSTORM">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="PHP Remote Debug.Debugger" />
+      <item itemvalue="PHPUnit.UnitTests" />
+      <item itemvalue="PHPUnit.StatusTest.test_example" />
+      <item itemvalue="PHPUnit.StatusTest.testUserWithoutPermissionCantGetStatusesData" />
+      <item itemvalue="PHPUnit.StatusTest" />
+      <item itemvalue="PHPUnit.KindTest" />
+      <item itemvalue="PHPUnit.OwnerTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.OwnerTest" />
+        <item itemvalue="PHPUnit.KindTest" />
+        <item itemvalue="PHPUnit.StatusTest" />
+        <item itemvalue="PHPUnit.StatusTest.testUserWithoutPermissionCantGetStatusesData" />
+        <item itemvalue="PHPUnit.StatusTest.test_example" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fcb2e667-ed44-4038-b937-1f455a419f89" name="Changes" comment="" />
+      <created>1685124744266</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685124744266</updated>
+      <workItem from="1685124747120" duration="9262000" />
+      <workItem from="1685134649676" duration="1898000" />
+      <workItem from="1685258875015" duration="47696000" />
+      <workItem from="1685378962731" duration="3283000" />
+      <workItem from="1685434209013" duration="28000" />
+      <workItem from="1685460825830" duration="2592000" />
+      <workItem from="1685469834013" duration="19843000" />
+      <workItem from="1685516914041" duration="3027000" />
+      <workItem from="1685522583719" duration="2610000" />
+      <workItem from="1685613669830" duration="899000" />
+      <workItem from="1685615894961" duration="52000" />
+      <workItem from="1685871805563" duration="21237000" />
+      <workItem from="1685893715982" duration="2424000" />
+      <workItem from="1685948914142" duration="656000" />
+      <workItem from="1686239337571" duration="1962000" />
+      <workItem from="1686295308476" duration="591000" />
+      <workItem from="1686765097728" duration="3830000" />
+      <workItem from="1686812036045" duration="2000" />
+      <workItem from="1686812084991" duration="43000" />
+      <workItem from="1687087779258" duration="10385000" />
+      <workItem from="1687158535663" duration="33000" />
+      <workItem from="1687330797286" duration="172000" />
+      <workItem from="1687364671973" duration="9226000" />
+      <workItem from="1687415725918" duration="30000" />
+      <workItem from="1688213987839" duration="13429000" />
+      <workItem from="1688279285293" duration="12309000" />
+      <workItem from="1688377678987" duration="1771000" />
+      <workItem from="1688453006958" duration="5573000" />
+      <workItem from="1688973488816" duration="36000" />
+      <workItem from="1689011302365" duration="11645000" />
+      <workItem from="1689058251366" duration="14000" />
+      <workItem from="1689972850332" duration="832000" />
+      <workItem from="1692979561075" duration="9817000" />
+      <workItem from="1693149389961" duration="1820000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/app/Actions/Auth/LoginAction.php</url>
+          <line>14</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/app/Http/Controllers/LoginController.php</url>
+          <line>22</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/vendor/laravel/framework/src/Illuminate/Auth/Access/Gate.php</url>
+          <line>327</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/vendor/laravel/framework/src/Illuminate/Auth/Access/Gate.php</url>
+          <line>315</line>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/app/Services/Api/v1/User/UserService.php</url>
+          <line>80</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/app/Services/Api/v1/Owner/OwnerService.php</url>
+          <line>29</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/app/Http/Controllers/Api/v1/Owner/OwnerController.php</url>
+          <line>34</line>
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Journal@NoteTest_testAuthenticatedUserWithAnyRoleCanGetListOfNotes.xml" NAME="NoteTest.testAuthenticatedUserWithAnyRoleCanGetListOfNotes Coverage Results" MODIFIED="1687095006434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
