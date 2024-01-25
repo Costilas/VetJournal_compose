@@ -1,8 +1,5 @@
 version: "3.7"
 
-volumes:
-  mysql-data: {}
-
 services:
   nginx:
     build:
@@ -24,9 +21,9 @@ services:
       - ./app:/var/www/html/app
 
   mysql:
-    image: mysql
+    image: mysql:5.7
     volumes:
-      - mysql-data:/var/lib/mysql
+      - ./mysql-data:/var/lib/mysql
     ports:
       - "3306:3306"
     environment:
