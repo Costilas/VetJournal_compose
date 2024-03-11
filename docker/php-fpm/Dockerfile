@@ -1,39 +1,28 @@
-FROM php:8.1-fpm-alpine
+FROM php:8.1-fpm
 
-#сделать композер доступным внутри контейнера
+# Сделать Composer доступным внутри контейнера
 COPY ./docker/php-fpm/conf.d /usr/local/etc/php/conf.d
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 
-RUN apk update \
-    && apk --no-cache upgrade \
-    && apk add yaml-dev autoconf make g++ \
+# Обновление пакетов и установка необходимых зависимостей
+RUN apt-get update \
+    && apt-get upgrade -y \
+    && apt-get install -y libyaml-dev autoconf make g++ \
     && pecl install yaml-2.2.2 \
-    && docker-php-ext-install mysqli pdo pdo_mysql bcmath\
-    && docker-php-ext-enable yaml 
+    && docker-php-ext-install mysqli pdo pdo_mysql bcmath \
+    && docker-php-ext-enable yaml
 
-#also for ckfinder to get it work
-RUN apk add --no-cache libpng libpng-dev \
-    && docker-php-ext-install gd \
-    && docker-php-ext-enable gd \
-    && apk del libpng-dev
-
-#for installing ckfinder via composer
-RUN apk add --no-cache libzip-dev zip \
-    && docker-php-ext-install zip \
-    && docker-php-ext-enable zip
-
-
+# Копирование конфигурации PHP
 RUN mv $PHP_INI_DIR/php.ini-development $PHP_INI_DIR/php.ini
 
-COPY ./docker/php-fpm/entrypoint.sh /usr/local/bin/docker-php-entrypoint
-RUN chmod +x /usr/local/bin/docker-php-entrypoint
-
-#установка debugger
+# Установка Xdebug
 RUN pecl install xdebug-3.1.2 \
     && docker-php-ext-enable xdebug
 
-WORKDIR ./app
+# Создание файла лога для Xdebug и установка прав
+RUN touch /var/log/xdebug.log && chmod 777 /var/log/xdebug.log
 
+WORKDIR /app
 
 
 
