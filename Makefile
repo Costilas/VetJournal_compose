@@ -1,10 +1,20 @@
-up:	artisan own chmod
+CONTAINER_NAME=vetjournal-php-fpm-1
+WORKDIR=/var/www/html/app
 
-artisan:
-	docker exec journallaravel_php-fpm_1 $(COM)
+exec:
+	docker exec -w $(WORKDIR) $(CONTAINER_NAME) $(COM)
 
-own:
-	docker exec journallaravel_php-fpm_1 chown 1000:1000 -R ./
+composer:
+	docker exec -w $(WORKDIR) $(CONTAINER_NAME) composer install --dev
 
-chmod:
-	chmod 777 -R ./app
+build: remove
+	docker-compose up -d --build
+
+remove:
+	docker-compose down
+
+start:
+	docker-compose up -d
+
+start:
+	docker-compose stop

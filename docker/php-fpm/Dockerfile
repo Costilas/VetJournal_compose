@@ -22,7 +22,7 @@ RUN pecl install xdebug-3.1.2 \
 # Создание файла лога для Xdebug и установка прав
 RUN touch /var/log/xdebug.log && chmod 777 /var/log/xdebug.log
 
-WORKDIR /app
+WORKDIR /var/www/html/app
 
 
 
