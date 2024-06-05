@@ -1,30 +1,51 @@
-FROM php:8.1-fpm
+FROM php:8.3-fpm
 
-# Сделать Composer доступным внутри контейнера
-COPY ./docker/php-fpm/conf.d /usr/local/etc/php/conf.d
+COPY ./docker/php-fpm/conf.d /usr/local/etc/php/
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 
-# Обновление пакетов и установка необходимых зависимостей
+RUN mkdir -p /var/log/php-fpm \
+    && touch /var/log/php-fpm/xdebug.log \
+    && touch /var/log/php-fpm/error.log \
+    && chmod -R 777 /var/log/php-fpm
+
 RUN apt-get update \
     && apt-get upgrade -y \
-    && apt-get install -y libyaml-dev autoconf make g++ \
-    && pecl install yaml-2.2.2 \
-    && docker-php-ext-install mysqli pdo pdo_mysql bcmath \
-    && docker-php-ext-enable yaml
+    && apt-get install -y \
+        autoconf \
+        pkg-config \
+        libcurl4-openssl-dev \
+        libxml2-dev \
+        libicu-dev \
+        libonig-dev \
+        libzip-dev \
+        libpq-dev \
+        libjpeg-dev \
+        libpng-dev \
+        libfreetype6-dev \
+        libxslt1-dev \
+        libc-client-dev \
+        libkrb5-dev \
+        libtidy-dev \
+    && rm -r /var/lib/apt/lists/* \
+    && docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install \
+        ctype \
+        curl \
+        dom \
+        fileinfo \
+        filter \
+        mbstring \
+        pdo \
+        pdo_mysql \
+        pdo_pgsql \
+        pgsql \
+        session \
+        xml \
+        zip \
+        gd \
+        intl
 
-# Копирование конфигурации PHP
-RUN mv $PHP_INI_DIR/php.ini-development $PHP_INI_DIR/php.ini
-
-# Установка Xdebug
-RUN pecl install xdebug-3.1.2 \
+RUN pecl install xdebug-3.3.0 \
     && docker-php-ext-enable xdebug
 
-# Создание файла лога для Xdebug и установка прав
-RUN touch /var/log/xdebug.log && chmod 777 /var/log/xdebug.log
-
 WORKDIR /var/www/html/app
-
-
-
-
-

@@ -1,6 +1,8 @@
 .idea/
 app/
 mysql-data
+logs/nginx/*
+logs/php-fpm/*
 
 # Ingnore specific MacOS files
 .DS_Store
